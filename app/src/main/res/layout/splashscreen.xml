@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_splashscreen"
+        android:src="@drawable/icon_note"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txt_icon_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/google_sans_medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/img_splashscreen"
+        android:text="La vie va trop vite n'oubliez rien et notez le !"
+        android:textSize="16sp">
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:indeterminate="true"
+        android:layout_marginTop="420dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:theme="@style/Theme.Notes"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/txt_icon_splash"
+        android:textStyle="bold"
+        android:text="Par Benjamin"
+        android:textSize="16sp"
+        android:fontFamily="@font/google_sans_bold"
+        android:layout_marginTop="680dp"
+        android:gravity="center"
+        >
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
